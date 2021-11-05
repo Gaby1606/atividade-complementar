@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            /*Fazer um programa que apresente um Cardápio do XIS Turma
+            INFO: Apresentar o cardápio abaixo para o usuário com a
+            numeração 1.... para escolha do lanche e bebidas.
+            Pergunte ao usuário qual o lanche e a bebida que ele deseja, e a
+            quantidade, se deseja tele entrega, caso sim, somar ao total
+            r$5,00. Quando ele finalizar o pedido com a opção 0 mostrar a
+            soma do pedido, mostrando o que ele pediu.*/
+            let lanches = parseInt(prompt("Escolha seu lanche \n1- X-Salada...R$6,50 \n2- X-Burguer...R$7,00 \n3- X-Bacon...R$7,00 \n4- X-Calabresa...R$7,00 \n5- X-Calabacon...R$7,50"))
+            let bebidas = parseInt(prompt("Escolha sua bebida \n1- Água 500ml...R$1,50   \n2- Coca-Cola 600ml...R$3,00 \n3- Guaraná 2lts...R$3,50"))
+            let quantLanches=parseInt(prompt("Quantos lanches você vai querer?"))
+            let quantBebidas=parseInt(prompt("Quantas bebidas você quer?"))
+            let frete=prompt("Quer tele-entrega? \n1- Sim \n2- Não")
+            let x
+            let y
+            let z
+            if (lanches ==1){
+                x=6.50
+            }else if(lanches=1<=4){
+                x=7
+            }else if(lanches==5){
+                x=7.50
+            } 
+
+            if(bebidas==1){
+                y=6
+            }else if(bebidas==2){
+                y=3
+            }
+
+            if(frete==1){
+                z=5
+            }else if(frete==2){
+                z=0
+            }
+
+            console.log("Preço lanche", quantLanches*x, "Preço bebida", quantBebidas)
+            console.log("Preço total", (quantLanches*x)+(quantBebidas*y+z))
+            </script>
+            <body></body>
+        </head>
+    </html>
+    
